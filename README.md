@@ -1,7 +1,8 @@
 # Doctrine Common, for Zend Framework 1.11.X
 
 Some helpers to ease implementation of some [Doctrine Common](https://github.com/doctrine/common)'s features in Zend Framework 1.11.x
-This was part of my [Doctrine ODM Zend Framework integration](https://github.com/axiomes/Doctrine-ODM-Zend-Framework-integration), but I decided to make it independant for easier reuse.
+
+This was part of my [Doctrine ODM Zend Framework integration](https://github.com/axiomes/Doctrine-ODM-Zend-Framework-integration), but I decided to make it independent for easier re-use.
 
 ## Features
 ### What it does
@@ -11,7 +12,7 @@ This was part of my [Doctrine ODM Zend Framework integration](https://github.com
 
 ## How to use it:
 
-### Add pluginpath(s) and lib autoloading before resources definition
+### Add plugin path(s) and lib auto loading before resources definition
 Before resource definitions in your application.ini
 
     pluginpaths.Axiomes\Application\Resource\ = APPLICATION_PATH "/../library/Axiomes/Application/Resource/"
