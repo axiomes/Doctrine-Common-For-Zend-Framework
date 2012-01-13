@@ -5,7 +5,7 @@ Some helpers to ease implementation of some [Doctrine Common](https://github.com
 This was part of my [Doctrine ODM Zend Framework integration](https://github.com/axiomes/Doctrine-ODM-Zend-Framework-integration), but I decided to make it independent for easier re-use.
 
 ## Features
-### What it does
+### What it provides
 
 - A simple way to setup class loading via Doctrine's ClassLoader
 - A Doctrine compatible Zend_Cache frontend
@@ -19,12 +19,15 @@ Before resource definitions in your application.ini
 
     autoloadernamespaces[] = "Axiomes"
 
-### Set up the class Loader :
+### Set up the ClassLoader :
 
+	// Specify the ClassLoader path
 	resources.doctrineloader.classLoaderPath = LIBRARY_PATH "/vendor/doctrine-common/lib/Doctrine/Common/ClassLoader.php"
+
+    // Doctrine Common library autoloading
     resources.doctrineloader.namespaces.Doctrine\Common = LIBRARY_PATH "/vendor/doctrine-common/lib"
 
-    // Example for Doctrine ODM
+    // Other vendor libraires, like Doctrine ODM
     resources.doctrineloader.namespaces.Doctrine\MongoDB = LIBRARY_PATH "/vendor/doctrine-mongodb/lib"
     resources.doctrineloader.namespaces.Doctrine\ODM\MongoDB = LIBRARY_PATH "/vendor/doctrine-odm-mongodb/lib"
     resources.doctrineloader.namespaces.Symfony\Components = LIBRARY_PATH "/vendor/symfony-components/lib"
