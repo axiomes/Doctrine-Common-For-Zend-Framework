@@ -13,7 +13,7 @@ This was part of my [Doctrine ODM Zend Framework integration](https://github.com
 ## How to use it:
 
 ### Add plugin path(s) and lib auto loading before resources definition
-Before resource definitions in your application.ini
+In your application.ini, before resources configuration :
 
     pluginpaths.Axiomes\Application\Resource\ = APPLICATION_PATH "/../library/Axiomes/Application/Resource/"
 
